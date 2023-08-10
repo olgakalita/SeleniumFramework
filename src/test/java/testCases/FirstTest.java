@@ -1,5 +1,6 @@
 package testCases;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
@@ -7,7 +8,7 @@ import org.testng.annotations.Test;
 public class FirstTest {
 
     @Test
-    public void startDriver(){
+    public void startDriver() {
 
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\IdeaProjects\\TestProject\\src\\test\\resources\\executables\\chromedriver.exe");
 
@@ -16,9 +17,8 @@ public class FirstTest {
 
         ChromeDriver driver = new ChromeDriver(options);
 
-        driver.get("https://mvnrepository.com/open-source/testing-frameworks");
+        driver.get("https://test.my-fork.com/");
 
     }
-
-
 }
+
