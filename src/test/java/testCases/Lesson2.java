@@ -57,8 +57,7 @@ public class Lesson2 {
         Thread.sleep(1000);
         System.out.println(driver.findElement(By.xpath("//button[contains(text(),'Log In')]")).isDisplayed());
 
-        //Can this be an option to verify the Log In button?
-        //System.out.println(driver.findElement(By.xpath("//button[contains(text(),'Log In')]")).getText());
+        
     }
 
     @Test
