@@ -121,7 +121,7 @@ public class Lesson2 {
 
         Thread.sleep(1000);
 
-        System.out.println(driver.findElement(By.xpath("//label[@class='auth-page-remember-me-checkbox']")).isEnabled());
+        System.out.println(driver.findElement(By.xpath("//input[@id='auth-page-remember-me']")).isEnabled());
 
     }
 }
