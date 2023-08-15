@@ -57,7 +57,7 @@ public class Lesson2 {
         Thread.sleep(1000);
         System.out.println(driver.findElement(By.xpath("//button[contains(text(),'Log In')]")).isDisplayed());
 
-        
+
     }
 
     @Test
@@ -123,6 +123,7 @@ public class Lesson2 {
         System.out.println(driver.findElement(By.xpath("//input[@id='auth-page-remember-me']")).isEnabled());
 
     }
+
 }
 
 
