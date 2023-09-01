@@ -10,7 +10,7 @@ public class LoginTest extends BaseTest{
 
 
     @Test
-    public void startDriver() {
+    public void startDriver() throws InterruptedException {
         homePage.openPage();
 
     }
@@ -23,7 +23,6 @@ public class LoginTest extends BaseTest{
     @Test
     public void validateEmailPasswordLogin() throws InterruptedException {
         homePage.openPage();
-        Thread.sleep(1000);
         homePage.loginSignIn();
         loginPage.validateText();
     }
@@ -31,7 +30,6 @@ public class LoginTest extends BaseTest{
     @Test
     public void enterInvalidEmailLogin() throws InterruptedException {
         homePage.openPage();
-        Thread.sleep(1000);
         homePage.loginSignIn();
         loginPage.invalidPasswordLogin(invalid_email, invalid_password);
     }
@@ -39,19 +37,14 @@ public class LoginTest extends BaseTest{
     @Test
     public void validateError() throws InterruptedException {
         homePage.openPage();
-        Thread.sleep(1000);
         homePage.loginSignIn();
-        Thread.sleep(1000);
         loginPage.invalidPasswordLogin(invalid_email, invalid_password);
-        Thread.sleep(4000);
         loginPage.errorValidate();
-        Thread.sleep(4000);
     }
 
     @Test
     public void validateCheckBox() throws InterruptedException {
         homePage.openPage();
-        Thread.sleep(1000);
         homePage.loginSignIn();
         loginPage.checkBoxValidate();
     }

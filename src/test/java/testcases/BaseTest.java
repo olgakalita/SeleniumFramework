@@ -6,11 +6,13 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import pageobject.HomePage;
 import pageobject.LoginPage;
+import pageobject.SignUpPage;
 
 public class BaseTest {
     public ChromeDriver driver;
     HomePage homePage;
     LoginPage loginPage;
+    SignUpPage signUpPage;
 
     @BeforeMethod
     public void setUp(){
@@ -21,6 +23,7 @@ public class BaseTest {
         driver.manage().window().maximize();
         homePage = new HomePage(driver);
         loginPage = new LoginPage(driver);
+        signUpPage = new SignUpPage(driver);
 
     }
     @AfterMethod

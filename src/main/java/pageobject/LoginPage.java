@@ -14,10 +14,11 @@ public class LoginPage extends BaseMain {
     public String login_errorDisplay = "//div[@class='test-login-errors']/p[2]";
     public String checkBox_Id = "//input[@id='auth-page-remember-me']";
 
-    public void invalidPasswordLogin(String invalidEmail, String invalidPassword) {
+    public void invalidPasswordLogin(String invalidEmail, String invalidPassword) throws InterruptedException {
         driver.findElement(By.xpath(email_Id)).sendKeys(invalidEmail);
         driver.findElement(By.xpath(password_Id)).sendKeys(invalidPassword);
         driver.findElement(By.xpath(login_button)).click();
+        Thread.sleep(4000);
     }
     public void validateText() {
         System.out.println(driver.findElement(By.xpath(email_Id)).isDisplayed());
@@ -25,9 +26,9 @@ public class LoginPage extends BaseMain {
         System.out.println(driver.findElement(By.xpath(login_button)).isDisplayed());
 
     }
-    public void errorValidate(){
-
+    public void errorValidate() throws InterruptedException {
         System.out.println(driver.findElement(By.xpath(login_errorDisplay)).isDisplayed());
+        Thread.sleep(4000);
     }
     public void checkBoxValidate(){
         System.out.println(driver.findElement(By.xpath(checkBox_Id)).isEnabled());
