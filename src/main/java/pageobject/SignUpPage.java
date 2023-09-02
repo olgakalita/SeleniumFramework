@@ -1,6 +1,7 @@
 package pageobject;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -17,6 +18,8 @@ public class SignUpPage extends BaseMain {
 
     public void dropdownMenu() throws InterruptedException {
 
+        JavascriptExecutor scrollDown = (JavascriptExecutor) driver;
+        scrollDown.executeScript("window.scrollBy(0,1000)", "");
         WebElement searchMenu;
         searchMenu = driver.findElement(By.xpath(dropdown_id));
         Select menuDropDown = new Select(searchMenu);
@@ -25,6 +28,6 @@ public class SignUpPage extends BaseMain {
         for (int i = 0; i < options.size(); i++) {
             System.out.println(options.get(i).getText());
         }
-        Thread.sleep(2000);
+
     }
 }

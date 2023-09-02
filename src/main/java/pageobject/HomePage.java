@@ -1,7 +1,11 @@
 package pageobject;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class HomePage extends BaseMain{
 
@@ -16,18 +20,19 @@ public class HomePage extends BaseMain{
 
     public void openPage() throws InterruptedException {
         driver.get(websiteUrl);
-        Thread.sleep(1000);
+        List<String> tab = new ArrayList<>(driver.getWindowHandles());
+        driver.switchTo().newWindow(WindowType.TAB);
+        tab = new ArrayList<>(driver.getWindowHandles());
+        driver.switchTo().window(tab.get(0));
     }
     public void loginSignIn() throws InterruptedException {
         openPage();
-        Thread.sleep(2000);
         driver.findElement(By.xpath(signIn)).click();
-        Thread.sleep(2000);
+
     }
 
     public void signUp() throws InterruptedException {
         openPage();
-        Thread.sleep(2000);
         driver.findElement(By.xpath(signUpButton)).click();
 
 
