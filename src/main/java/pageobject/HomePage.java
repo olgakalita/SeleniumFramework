@@ -10,6 +10,7 @@ import java.util.List;
 public class HomePage extends BaseMain{
 
     public HomePage(ChromeDriver driver){
+
         super(driver);
     }
 
@@ -20,10 +21,7 @@ public class HomePage extends BaseMain{
 
     public void openPage() throws InterruptedException {
         driver.get(websiteUrl);
-        List<String> tab = new ArrayList<>(driver.getWindowHandles());
-        driver.switchTo().newWindow(WindowType.TAB);
-        tab = new ArrayList<>(driver.getWindowHandles());
-        driver.switchTo().window(tab.get(0));
+
     }
     public void loginSignIn() throws InterruptedException {
         openPage();

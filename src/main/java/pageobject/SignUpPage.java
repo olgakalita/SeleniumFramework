@@ -18,8 +18,6 @@ public class SignUpPage extends BaseMain {
 
     public void dropdownMenu() throws InterruptedException {
 
-        JavascriptExecutor scrollDown = (JavascriptExecutor) driver;
-        scrollDown.executeScript("window.scrollBy(0,1000)", "");
         WebElement searchMenu;
         searchMenu = driver.findElement(By.xpath(dropdown_id));
         Select menuDropDown = new Select(searchMenu);
