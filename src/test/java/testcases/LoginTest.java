@@ -1,7 +1,11 @@
 package testcases;
 
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
+import pageobject.CourseGalleryPage;
+
+import java.time.Duration;
 
 public class LoginTest extends BaseTest{
 
@@ -14,10 +18,16 @@ public class LoginTest extends BaseTest{
         homePage.openPage();
 
     }
+
+    @Test
+    public void openCourseGallery() throws InterruptedException {
+        homePage.openPage();
+        courseGalleryPage.hardAsserts();
+    }
+
     @Test
     public void openSignInPage() throws InterruptedException {
         homePage.loginSignIn();
-
     }
 
     @Test
@@ -26,7 +36,13 @@ public class LoginTest extends BaseTest{
         homePage.loginSignIn();
         loginPage.validateText();
     }
+    @Test
+    public void openSignUpPage() throws InterruptedException {
+        homePage.openPage();
+        homePage.signUp();
+        signUpPage.softAsserts();
 
+    }
     @Test
     public void enterInvalidEmailLogin() throws InterruptedException {
         homePage.openPage();
@@ -48,6 +64,12 @@ public class LoginTest extends BaseTest{
         homePage.loginSignIn();
         loginPage.checkBoxValidate();
     }
+
+
+
+
+
+
 }
 
 

@@ -3,12 +3,12 @@ package pageobject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import java.util.ArrayList;
 import java.util.List;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class HomePage extends BaseMain{
-
     public HomePage(ChromeDriver driver){
 
         super(driver);
@@ -19,9 +19,10 @@ public class HomePage extends BaseMain{
     public String signUpButton = "//div[@id='sign-up-button']/..";
 
 
-    public void openPage() throws InterruptedException {
-        driver.get(websiteUrl);
 
+    public void openPage() {
+
+        driver.get(websiteUrl);
     }
     public void loginSignIn() throws InterruptedException {
         openPage();

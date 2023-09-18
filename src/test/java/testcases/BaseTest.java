@@ -5,6 +5,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+import pageobject.CourseGalleryPage;
 import pageobject.HomePage;
 import pageobject.LoginPage;
 import pageobject.SignUpPage;
@@ -16,10 +18,11 @@ public class BaseTest {
     HomePage homePage;
     LoginPage loginPage;
     SignUpPage signUpPage;
+    CourseGalleryPage courseGalleryPage;
 
     @BeforeMethod
-    public void setUp(){
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\IdeaProjects\\TestProject\\src\\test\\resources\\executables\\chromedriver.exe");
+    public void setUp() {
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\Documents\\GitHub\\SeleniumFramework\\src\\test\\resources\\executables\\chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-alow-origins=*");
         driver = new ChromeDriver(options);
@@ -28,11 +31,14 @@ public class BaseTest {
         homePage = new HomePage(driver);
         loginPage = new LoginPage(driver);
         signUpPage = new SignUpPage(driver);
-
+        courseGalleryPage = new CourseGalleryPage(driver);
     }
-    @AfterMethod
+
+        @AfterMethod
     public void tearDown(){
         driver.quit();
     }
+
+
 }
 

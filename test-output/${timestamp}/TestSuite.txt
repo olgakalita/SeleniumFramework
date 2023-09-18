@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 85.355 s <<< FAILURE! - in TestSuite
+openCourseGallery(testcases.LoginTest)  Time elapsed: 2.656 s  <<< FAILURE!
+java.lang.AssertionError: expected [Choose your area of expertise] but found [Business Analyst]
+	at testcases.LoginTest.openCourseGallery(LoginTest.java:25)
+
+openSignUpPage(testcases.LoginTest)  Time elapsed: 3.044 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [Already have] but found [Already have an account? Log In],
+	expected [8] but found [14],
+	expected [Email address] but found [Email]
+	at testcases.LoginTest.openSignUpPage(LoginTest.java:43)
+
+openCourseGallery(testcases.LoginTest)  Time elapsed: 6.179 s  <<< FAILURE!
+java.lang.AssertionError: expected [Choose your area of expertise] but found [Business Analyst]
+	at testcases.LoginTest.openCourseGallery(LoginTest.java:25)
+
+openSignUpPage(testcases.LoginTest)  Time elapsed: 2.807 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [Already have] but found [Already have an account? Log In],
+	expected [8] but found [14],
+	expected [Email address] but found [Email]
+	at testcases.LoginTest.openSignUpPage(LoginTest.java:43)
+
