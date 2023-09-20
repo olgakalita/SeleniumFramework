@@ -1,0 +1,7 @@
+pageobject\BaseMain.class
+pageobject\HomePage.class
+javapracticum\JavaMethodsTest.class
+pageobject\SignUpPage.class
+pageobject\CourseGalleryPage.class
+pageobject\LoginPage.class
+javapracticum\Main.class
