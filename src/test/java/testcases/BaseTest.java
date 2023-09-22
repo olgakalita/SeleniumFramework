@@ -20,7 +20,7 @@ public class BaseTest {
     SignUpPage signUpPage;
     CourseGalleryPage courseGalleryPage;
 
-    @BeforeMethod
+    @BeforeMethod(groups={"testHomePage", "newFeature"})
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\Documents\\GitHub\\SeleniumFramework\\src\\test\\resources\\executables\\chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
@@ -34,7 +34,7 @@ public class BaseTest {
         courseGalleryPage = new CourseGalleryPage(driver);
     }
 
-        @AfterMethod
+        @AfterMethod(groups={"testHomePage", "newFeature"})
     public void tearDown(){
         driver.quit();
     }
