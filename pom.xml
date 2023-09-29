@@ -34,8 +34,7 @@
             <suiteXmlFiles>
               <suiteXmlFile>src/test/resources/runner/testng.xml</suiteXmlFile>
             </suiteXmlFiles>
-            <!--suppress UnresolvedMavenProperty -->
-            <reportsDirectory>./test-output/${timestamp}</reportsDirectory>
+
           </configuration>
         </plugin>
       </plugins>

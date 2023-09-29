@@ -6,10 +6,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import pageobject.CourseGalleryPage;
-import pageobject.HomePage;
-import pageobject.LoginPage;
-import pageobject.SignUpPage;
+import pageobject.*;
 
 import java.time.Duration;
 
@@ -19,6 +16,7 @@ public class BaseTest {
     LoginPage loginPage;
     SignUpPage signUpPage;
     CourseGalleryPage courseGalleryPage;
+    HistoryPage historyPage;
 
     @BeforeMethod(groups={"testHomePage", "newFeature"})
     public void setUp() {
@@ -32,6 +30,8 @@ public class BaseTest {
         loginPage = new LoginPage(driver);
         signUpPage = new SignUpPage(driver);
         courseGalleryPage = new CourseGalleryPage(driver);
+        historyPage = new HistoryPage(driver);
+
     }
 
         @AfterMethod(groups={"testHomePage", "newFeature"})

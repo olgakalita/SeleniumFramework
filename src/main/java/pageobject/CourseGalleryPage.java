@@ -41,5 +41,10 @@ public class CourseGalleryPage extends BaseMain {
         Assert.assertEquals(oneOfListItem.getText(),expectedText);
     }
 
+    public void openCourseGallPage(){
+        driver.findElement(By.xpath(courseXpath)).click();
+
+    }
+
 
 }
