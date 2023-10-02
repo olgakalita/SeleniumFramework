@@ -9,23 +9,27 @@
                 <include name="validateError"></include>
             </run>
         </groups>
-        
+
         <classes>
             <class name="testcases.LoginTest">
-            <methods>
-                <exclude name="openCourseGallery"></exclude>
-                <exclude name="openSignUpPage"></exclude>
-                <exclude name="validateEmailPasswordLogin"></exclude>
-                <exclude name="enterInvalidEmailLogin"></exclude>
-            </methods>
+                <methods>
+                    <exclude name="openCourseGallery"></exclude>
+                    <exclude name="openSignUpPage"></exclude>
+                    <exclude name="validateEmailPasswordLogin"></exclude>
+                    <exclude name="enterInvalidEmailLogin"></exclude>
+                </methods>
             </class>
-            
+
             <class name="testcases.DropdownTest"></class>
         </classes>
     </test>
+
+
     <test name="Smoke">
         <classes>
-            <class name="testcases.LoginTest"/>
+
+            <class name="testcases.AssignmentTest"/>
+
         </classes>
     </test>
 

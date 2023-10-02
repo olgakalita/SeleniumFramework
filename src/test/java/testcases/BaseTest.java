@@ -34,7 +34,7 @@ public class BaseTest {
 
     }
 
-        @AfterMethod(groups={"testHomePage", "newFeature"})
+    @AfterMethod(groups={"testHomePage", "newFeature"})
     public void tearDown(){
         driver.quit();
     }

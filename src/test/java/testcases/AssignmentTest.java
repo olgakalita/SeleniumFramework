@@ -1,6 +1,11 @@
 package testcases;
 
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
+import pageobject.CourseGalleryPage;
+
+import java.time.Duration;
 
 public class AssignmentTest extends BaseTest {
 
@@ -28,6 +33,7 @@ public class AssignmentTest extends BaseTest {
         homePage.openPage();
         courseGalleryPage.openCourseGallPage();
         historyPage.sqlOptions();
+
 
     }
 }
