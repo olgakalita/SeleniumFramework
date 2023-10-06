@@ -30,13 +30,13 @@ public class LoginTest extends BaseTest{
     @Test(priority=2, groups={"newFeature"})
     public void openSignInPage() throws InterruptedException {
         System.out.println("newFeature 2");
-        homePage.loginSignIn();
+        homePage.loginSignInPage();
     }
 
     @Test
     public void validateEmailPasswordLogin() throws InterruptedException {
         homePage.openPage();
-        homePage.loginSignIn();
+        homePage.loginSignInPage();
         loginPage.validateText();
     }
     @Test
@@ -49,7 +49,7 @@ public class LoginTest extends BaseTest{
     @Test
     public void enterInvalidEmailLogin() throws InterruptedException {
         homePage.openPage();
-        homePage.loginSignIn();
+        homePage.loginSignInPage();
         loginPage.invalidPasswordLogin(invalid_email, invalid_password);
     }
 
@@ -57,7 +57,7 @@ public class LoginTest extends BaseTest{
     public void validateError() throws InterruptedException {
         System.out.println("newFeature 3");
         homePage.openPage();
-        homePage.loginSignIn();
+        homePage.loginSignInPage();
         loginPage.invalidPasswordLogin(invalid_email, invalid_password);
         loginPage.errorValidate();
     }
@@ -65,7 +65,7 @@ public class LoginTest extends BaseTest{
     @Test(priority=3)
     public void validateCheckBox() throws InterruptedException {
         homePage.openPage();
-        homePage.loginSignIn();
+        homePage.loginSignInPage();
         loginPage.checkBoxValidate();
     }
 

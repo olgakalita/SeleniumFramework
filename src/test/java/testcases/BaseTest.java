@@ -17,6 +17,7 @@ public class BaseTest {
     SignUpPage signUpPage;
     CourseGalleryPage courseGalleryPage;
     HistoryPage historyPage;
+    BaseMain baseMain;
 
     @BeforeMethod(groups={"testHomePage", "newFeature"})
     public void setUp() {
@@ -31,6 +32,7 @@ public class BaseTest {
         signUpPage = new SignUpPage(driver);
         courseGalleryPage = new CourseGalleryPage(driver);
         historyPage = new HistoryPage(driver);
+        baseMain = new BaseMain(driver);
 
     }
 
