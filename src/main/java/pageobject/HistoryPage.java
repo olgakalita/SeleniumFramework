@@ -25,7 +25,7 @@ public class HistoryPage extends BaseMain {
     public String startBtnSqlBasics = "//*[@id='area-quiz-select']/div[2]/div[2]/a/div";
     public String questionAnswerXpath = "//div[@class='quiz-process-question-block-answers-block']/div[1]/div[1]";
     public String progressBarValidateXpath = "//div[@class='quiz-process-progress']/div[1]";
-    List<String>expected = Arrays.asList("Development","Testing","Business Analyst","Agile","Project Management");
+    List<String>expected = Arrays.asList("Development","Testing","Business Analysis","Agile","Project Management");
 
 
     public boolean validateHistoryLinkIsNotDisplayed() throws InterruptedException {
