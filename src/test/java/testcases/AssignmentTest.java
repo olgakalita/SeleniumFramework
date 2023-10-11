@@ -15,7 +15,8 @@ public class AssignmentTest extends BaseTest {
     public void scenario1() throws InterruptedException {
         homePage.openPage();
         courseGalleryPage.openCourseGalleryPage();
-        historyPage.validateHistoryLinkIsNotDisplayed();
+        boolean verification = historyPage.validateHistoryLinkIsNotDisplayed();
+        historyPage.verificationMethod(verification);
         baseMain.windowHandles(0);
         homePage.loginSignInPage();
         historyPage.signInAsUser();

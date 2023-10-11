@@ -5,13 +5,15 @@ import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class HomePage extends BaseMain{
-    public HomePage(ChromeDriver driver){
+    public HomePage(ChromeDriver driver, Logger log){
 
-        super(driver);
+        super(driver, log);
     }
 
     public String websiteUrl = "https://test.my-fork.com/";
@@ -26,13 +28,15 @@ public class HomePage extends BaseMain{
     }
     public void loginSignInPage() throws InterruptedException {
         openPage();
-        driver.findElement(By.xpath(signIn)).click();
+        clickUsingXpath(signIn, "click on sign in page");
+        //driver.findElement(By.xpath(signIn)).click();
 
     }
 
     public void signUp() throws InterruptedException {
         openPage();
-        driver.findElement(By.xpath(signUpButton)).click();
+        clickUsingXpath(signUpButton, "click on sign Up button");
+        //driver.findElement(By.xpath(signUpButton)).click();
 
 
     }

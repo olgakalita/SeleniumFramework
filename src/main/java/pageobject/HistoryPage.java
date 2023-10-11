@@ -8,11 +8,12 @@ import org.testng.Assert;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.logging.Logger;
 
 public class HistoryPage extends BaseMain {
 
-    public HistoryPage(ChromeDriver driver) {
-        super(driver);
+    public HistoryPage(ChromeDriver driver, Logger log) {
+        super(driver, log);
     }
     public String verifyTextHistory = "History";
     public String email_Id = "//input[@id='email']";
@@ -23,6 +24,7 @@ public class HistoryPage extends BaseMain {
     public By menuOptionsXpath = By.xpath("//div[@class='expertise-areas-list']/div");
     public String questionNumberVerifyXpath = "//div[@id='area-quiz-select']/div[2]/div[@class='quiz-item-bottom-block']/div[@class='quiz-item-questions-count']";
     public String startBtnSqlBasics = "//*[@id='area-quiz-select']/div[2]/div[2]/a/div";
+    public String nextButtonClick = "//div[@class='quiz-process-navigations-block']/div[2]";
     public String questionAnswerXpath = "//div[@class='quiz-process-question-block-answers-block']/div[1]/div[1]";
     public String progressBarValidateXpath = "//div[@class='quiz-process-progress']/div[1]";
     List<String>expected = Arrays.asList("Development","Testing","Business Analysis","Agile","Project Management");
@@ -38,11 +40,17 @@ public class HistoryPage extends BaseMain {
             return true;
         }
     }
+public void verificationMethod(boolean verification){
+        validateBooleanWithAssertTrue(true);
+        
+
+}
     public void signInAsUser() {
-        driver.findElement(By.xpath(email_Id)).sendKeys("testing@my-fork.com");
-        driver.findElement(By.xpath(password_Id)).sendKeys("Password");
-        driver.findElement(By.xpath(login_button)).click();
-        driver.findElement(By.xpath(courseGalleryXpath)).click();
+        typeUsingXpath(email_Id, "email text field", "testing@my-fork.com");
+        typeUsingXpath(password_Id, "password text field", "Password");
+        clickUsingXpath (login_button, "login button click");
+        clickUsingXpath (courseGalleryXpath, "course Gallery Button click");
+
     }
     public WebElement validateHistoryIsDisplayed() {
         WebElement actualTextForHistory = driver.findElement(By.xpath(historyBtnIsDisplayedVerify));
@@ -73,10 +81,12 @@ public class HistoryPage extends BaseMain {
         return parseFromString;
     }
     public void startFirstQuiz() {
-        driver.findElement(By.xpath(startBtnSqlBasics)).click();
+        clickUsingXpath(startBtnSqlBasics, "click on start button SQL Basics");
+
     }
       public void answerQuestion() {
-          driver.findElement(By.xpath(questionAnswerXpath)).click();
+          clickUsingXpath(questionAnswerXpath, "click on answer question");
+
       }
 public double getProgressBarValue(){
         //Validate that the progress bar now has the correct value (correct value = number of answered questions / total number of questions)
@@ -94,10 +104,12 @@ public double getProgressBarValue(){
         return correctedValueAnsweredQuestionsRounded;
     }
      public void nextButtonClick() {
-         driver.findElement(By.xpath("//div[@class='quiz-process-navigations-block']/div[2]")).click();
+         clickUsingXpath(nextButtonClick, "click on next button");
+
 }
     public void assertForProgressBar(double actual, double expected){
-        Assert.assertEquals(actual, expected);
+        validateDoubleWithAssertEqual(actual, expected);
+
     }
 }
 

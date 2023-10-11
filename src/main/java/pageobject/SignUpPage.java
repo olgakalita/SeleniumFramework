@@ -1,5 +1,6 @@
 package pageobject;
 
+import java.util.logging.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -14,8 +15,8 @@ import java.util.List;
 public class SignUpPage extends BaseMain {
 
 
-    public SignUpPage(ChromeDriver driver) {
-        super(driver);
+    public SignUpPage(ChromeDriver driver, Logger log) {
+        super(driver, log);
     }
 
     public String actualTitle;

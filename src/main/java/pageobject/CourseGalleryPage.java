@@ -7,10 +7,11 @@ import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
 import java.util.List;
+import java.util.logging.Logger;
 
 public class CourseGalleryPage extends BaseMain {
-    public CourseGalleryPage(ChromeDriver driver) {
-        super(driver);
+    public CourseGalleryPage(ChromeDriver driver, Logger log) {
+        super(driver, log);
     }
     public String expectedTitle = "test.my-fork";
     public String actualTitle;
@@ -25,7 +26,8 @@ public class CourseGalleryPage extends BaseMain {
         actualTitle= driver.getCurrentUrl();
         Assert.assertTrue(actualTitle.contains(expectedTitle));
 
-        driver.findElement(By.xpath(courseXpath)).click();
+        clickUsingXpath(courseXpath, "click on course button");
+        //driver.findElement(By.xpath(courseXpath)).click();
         WebElement actualText = driver.findElement(By.xpath(textPass));
         Assert.assertEquals(actualText.getText(),expectedText);
 
@@ -42,7 +44,8 @@ public class CourseGalleryPage extends BaseMain {
     }
 
     public void openCourseGalleryPage(){
-        driver.findElement(By.xpath(courseXpath)).click();
+        clickUsingXpath(courseXpath, "click on course gallery");
+        //driver.findElement(By.xpath(courseXpath)).click();
 
     }
 

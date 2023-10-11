@@ -1,0 +1,6 @@
+Oct 11, 2023 12:38:13 P.M. testcases.BaseTest saveLogs
+INFO: this is the beginning of the test suit
+Oct 11, 2023 12:38:44 P.M. pageobject.BaseMain typeUsingXpath
+INFO: Value: testing@my-fork.com was successfully entered into email text field element
+Oct 11, 2023 12:38:44 P.M. pageobject.BaseMain typeUsingXpath
+INFO: Value: Password was successfully entered into password text field element

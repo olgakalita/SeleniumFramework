@@ -1,5 +1,6 @@
 package pageobject;
 
+//import io.opentelemetry.api.logs.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -8,11 +9,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.logging.Logger;
 
 public class LoginPage extends BaseMain {
 
-    public LoginPage(ChromeDriver driver){
-        super(driver);
+    public LoginPage(ChromeDriver driver, Logger log){
+        super(driver, log);
     }
     public String email_Id = "//input[@id='email']";
     public String password_Id = "//input[@id='password']";
@@ -21,9 +23,12 @@ public class LoginPage extends BaseMain {
     public String checkBox_Id = "//input[@id='auth-page-remember-me']";
 
     public void invalidPasswordLogin(String invalidEmail, String invalidPassword) throws InterruptedException {
-        driver.findElement(By.xpath(email_Id)).sendKeys(invalidEmail);
-        driver.findElement(By.xpath(password_Id)).sendKeys(invalidPassword);
-        driver.findElement(By.xpath(login_button)).click();
+        typeUsingXpath(email_Id, "email text field", invalidEmail);
+        //driver.findElement(By.xpath(email_Id)).sendKeys(invalidEmail);
+        typeUsingXpath(password_Id, "password text field", invalidPassword);
+        //driver.findElement(By.xpath(password_Id)).sendKeys(invalidPassword);
+        clickUsingXpath(login_button, "click login button");
+        //driver.findElement(By.xpath(login_button)).click();
 
     }
     public void validateText() {
