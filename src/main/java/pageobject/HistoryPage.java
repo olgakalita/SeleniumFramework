@@ -42,7 +42,7 @@ public class HistoryPage extends BaseMain {
     }
 public void verificationMethod(boolean verification){
         validateBooleanWithAssertTrue(true);
-        
+
 
 }
     public void signInAsUser() {

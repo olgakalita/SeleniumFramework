@@ -17,28 +17,30 @@ public class HomePage extends BaseMain{
     }
 
     public String websiteUrl = "https://test.my-fork.com/";
+    public String siteUrl = "https://www.amazon.ca/";
     public String signIn = "//div[@id='log-in-button']/..";
     public String signUpButton = "//div[@id='sign-up-button']/..";
 
 
 
     public void openPage() {
-
         driver.get(websiteUrl);
+    }
+    public void openSitePage(){
+        driver.get(siteUrl);
     }
     public void loginSignInPage() throws InterruptedException {
         openPage();
         clickUsingXpath(signIn, "click on sign in page");
-        //driver.findElement(By.xpath(signIn)).click();
-
     }
 
     public void signUp() throws InterruptedException {
         openPage();
         clickUsingXpath(signUpButton, "click on sign Up button");
-        //driver.findElement(By.xpath(signUpButton)).click();
+    }
 
-
+    public List<Integer>urlVerification(){
+        return verifyLinkActive();
     }
 
 }
