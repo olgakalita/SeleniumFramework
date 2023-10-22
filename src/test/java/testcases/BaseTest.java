@@ -26,7 +26,9 @@ public class BaseTest {
     @BeforeMethod(groups={"testHomePage", "newFeature"})
     public void setUp() throws IOException {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\Documents\\GitHub\\SeleniumFramework\\src\\test\\resources\\executables\\chromedriver.exe");
+        //System.setProperty("webdriver.chrome.driver", "home/kalytaolga/Documents/chromedriver");
         ChromeOptions options = new ChromeOptions();
+       // options.addArguments("--no-sandbox");
         options.addArguments("--remote-alow-origins=*");
         driver = new ChromeDriver(options);
         log = Logger.getLogger(getClass(). getName());
@@ -50,6 +52,7 @@ public class BaseTest {
     public void saveLogs(Logger log) throws IOException {
         FileHandler fileHandler;
         fileHandler = new FileHandler ("C:\\Users\\User\\Documents\\GitHub\\SeleniumFramework\\MyLogs.log");
+       // fileHandler = new FileHandler ("home/kalytaolga/Documents/chromedriver/MyLogs.log");
         log.addHandler(fileHandler);
         SimpleFormatter formatter = new SimpleFormatter();
         fileHandler.setFormatter(formatter);
