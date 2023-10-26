@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 50.611 s <<< FAILURE! - in TestSuite
+scenario2(testcases.AssignmentTest)  Time elapsed: 2.542 s  <<< FAILURE!
+java.lang.AssertionError: Lists differ at element [2]: Business Analysis != Business Analyst expected [Business Analysis] but found [Business Analyst]
+	at testcases.AssignmentTest.scenario2(AssignmentTest.java:32)
+

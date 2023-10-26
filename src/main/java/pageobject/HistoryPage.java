@@ -3,6 +3,7 @@ package pageobject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 
 import java.util.ArrayList;
@@ -12,7 +13,7 @@ import java.util.logging.Logger;
 
 public class HistoryPage extends BaseMain {
 
-    public HistoryPage(ChromeDriver driver, Logger log) {
+    public HistoryPage(RemoteWebDriver driver, Logger log) {
         super(driver, log);
     }
     public String verifyTextHistory = "History";

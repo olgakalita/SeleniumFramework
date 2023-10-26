@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.asserts.SoftAssert;
 import org.w3c.dom.Text;
@@ -15,7 +16,7 @@ import java.util.List;
 public class SignUpPage extends BaseMain {
 
 
-    public SignUpPage(ChromeDriver driver, Logger log) {
+    public SignUpPage(RemoteWebDriver driver, Logger log) {
         super(driver, log);
     }
 

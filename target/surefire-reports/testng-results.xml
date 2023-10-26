@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-10-23T08:12:05 EDT" name="My Fork" finished-at="2023-10-23T08:12:57 EDT" duration-ms="51316">
+    <groups>
+      <group name="newFeature">
+        <method signature="DropdownTest.dropdown()[pri:0, instance:testcases.DropdownTest@62150f9e]" name="dropdown" class="testcases.DropdownTest"/>
+        <method signature="LoginTest.openSignInPage()[pri:2, instance:testcases.LoginTest@7ed7259e]" name="openSignInPage" class="testcases.LoginTest"/>
+        <method signature="LoginTest.validateError()[pri:3, instance:testcases.LoginTest@7ed7259e]" name="validateError" class="testcases.LoginTest"/>
+      </group> <!-- newFeature -->
+      <group name="testHomePage">
+        <method signature="LoginTest.startDriver()[pri:1, instance:testcases.LoginTest@7ed7259e]" name="startDriver" class="testcases.LoginTest"/>
+      </group> <!-- testHomePage -->
+    </groups>
+    <test started-at="2023-10-23T08:12:05 EDT" name="Regression" finished-at="2023-10-23T08:12:52 EDT" duration-ms="46828">
+      <class name="testcases.DropdownTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.DropdownTest@62150f9e]" started-at="2023-10-23T08:12:05 EDT" name="setUp" finished-at="2023-10-23T08:12:10 EDT" duration-ms="4616" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="dropdown()[pri:0, instance:testcases.DropdownTest@62150f9e]" started-at="2023-10-23T08:12:10 EDT" name="dropdown" finished-at="2023-10-23T08:12:16 EDT" duration-ms="6446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropdown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.DropdownTest@62150f9e]" started-at="2023-10-23T08:12:16 EDT" name="tearDown" finished-at="2023-10-23T08:12:17 EDT" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.DropdownTest -->
+      <class name="testcases.LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.LoginTest@7ed7259e]" started-at="2023-10-23T08:12:17 EDT" name="setUp" finished-at="2023-10-23T08:12:20 EDT" duration-ms="3451" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="startDriver()[pri:1, instance:testcases.LoginTest@7ed7259e]" started-at="2023-10-23T08:12:20 EDT" name="startDriver" finished-at="2023-10-23T08:12:26 EDT" duration-ms="6074" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@7ed7259e]" started-at="2023-10-23T08:12:26 EDT" name="tearDown" finished-at="2023-10-23T08:12:26 EDT" duration-ms="258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.LoginTest@7ed7259e]" started-at="2023-10-23T08:12:26 EDT" name="setUp" finished-at="2023-10-23T08:12:30 EDT" duration-ms="3479" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="openSignInPage()[pri:2, instance:testcases.LoginTest@7ed7259e]" started-at="2023-10-23T08:12:30 EDT" name="openSignInPage" finished-at="2023-10-23T08:12:37 EDT" duration-ms="6990" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSignInPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@7ed7259e]" started-at="2023-10-23T08:12:37 EDT" name="tearDown" finished-at="2023-10-23T08:12:37 EDT" duration-ms="255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.LoginTest@7ed7259e]" started-at="2023-10-23T08:12:37 EDT" name="setUp" finished-at="2023-10-23T08:12:41 EDT" duration-ms="4124" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateError()[pri:3, instance:testcases.LoginTest@7ed7259e]" started-at="2023-10-23T08:12:41 EDT" name="validateError" finished-at="2023-10-23T08:12:52 EDT" duration-ms="10455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateError -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@7ed7259e]" started-at="2023-10-23T08:12:52 EDT" name="tearDown" finished-at="2023-10-23T08:12:52 EDT" duration-ms="406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.LoginTest -->
+    </test> <!-- Regression -->
+    <test started-at="2023-10-23T08:12:05 EDT" name="Smoke" finished-at="2023-10-23T08:12:57 EDT" duration-ms="51316">
+      <class name="testcases.AssignmentTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.AssignmentTest@515aebb0]" started-at="2023-10-23T08:12:05 EDT" name="setUp" finished-at="2023-10-23T08:12:08 EDT" duration-ms="2995" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="scenario1()[pri:0, instance:testcases.AssignmentTest@515aebb0]" started-at="2023-10-23T08:12:08 EDT" name="scenario1" finished-at="2023-10-23T08:12:43 EDT" duration-ms="35159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.AssignmentTest@515aebb0]" started-at="2023-10-23T08:12:43 EDT" name="tearDown" finished-at="2023-10-23T08:12:44 EDT" duration-ms="256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.AssignmentTest@515aebb0]" started-at="2023-10-23T08:12:44 EDT" name="setUp" finished-at="2023-10-23T08:12:46 EDT" duration-ms="2279" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="scenario2()[pri:0, instance:testcases.AssignmentTest@515aebb0]" started-at="2023-10-23T08:12:46 EDT" name="scenario2" finished-at="2023-10-23T08:12:49 EDT" duration-ms="2956" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=118.0.5993.89)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [61494fc12b1a18f225337bce95bc086c, findElement {using=xpath, value=//div[@id='log-in-button']/../../a[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50464}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50464/devtoo..., se:cdpVersion: 118.0.5993.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 61494fc12b1a18f225337bce95bc086c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=118.0.5993.89)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [61494fc12b1a18f225337bce95bc086c, findElement {using=xpath, value=//div[@id='log-in-button']/../../a[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50464}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50464/devtoo..., se:cdpVersion: 118.0.5993.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 61494fc12b1a18f225337bce95bc086c
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at pageobject.BaseMain.clickUsingXpath(BaseMain.java:36)
+at pageobject.CourseGalleryPage.openCourseGalleryPage(CourseGalleryPage.java:48)
+at testcases.AssignmentTest.scenario2(AssignmentTest.java:30)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.AssignmentTest@515aebb0]" started-at="2023-10-23T08:12:49 EDT" name="tearDown" finished-at="2023-10-23T08:12:49 EDT" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.AssignmentTest@515aebb0]" started-at="2023-10-23T08:12:49 EDT" name="setUp" finished-at="2023-10-23T08:12:51 EDT" duration-ms="1978" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="scenario3()[pri:0, instance:testcases.AssignmentTest@515aebb0]" started-at="2023-10-23T08:12:51 EDT" name="scenario3" finished-at="2023-10-23T08:12:56 EDT" duration-ms="5241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario3 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.AssignmentTest@515aebb0]" started-at="2023-10-23T08:12:56 EDT" name="tearDown" finished-at="2023-10-23T08:12:57 EDT" duration-ms="217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.AssignmentTest -->
+    </test> <!-- Smoke -->
+  </suite> <!-- My Fork -->
+</testng-results>

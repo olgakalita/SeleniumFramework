@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-10-23T18:41:34 EDT" name="My Fork" finished-at="2023-10-23T18:42:24 EDT" duration-ms="49979">
+    <groups>
+      <group name="newFeature">
+        <method signature="DropdownTest.dropdown()[pri:0, instance:testcases.DropdownTest@62150f9e]" name="dropdown" class="testcases.DropdownTest"/>
+        <method signature="LoginTest.openSignInPage()[pri:2, instance:testcases.LoginTest@7ed7259e]" name="openSignInPage" class="testcases.LoginTest"/>
+        <method signature="LoginTest.validateError()[pri:3, instance:testcases.LoginTest@7ed7259e]" name="validateError" class="testcases.LoginTest"/>
+      </group> <!-- newFeature -->
+      <group name="testHomePage">
+        <method signature="LoginTest.startDriver()[pri:1, instance:testcases.LoginTest@7ed7259e]" name="startDriver" class="testcases.LoginTest"/>
+      </group> <!-- testHomePage -->
+    </groups>
+    <test started-at="2023-10-23T18:41:34 EDT" name="Regression" finished-at="2023-10-23T18:42:09 EDT" duration-ms="35349">
+      <class name="testcases.DropdownTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.DropdownTest@62150f9e]" started-at="2023-10-23T18:41:34 EDT" name="setUp" finished-at="2023-10-23T18:41:38 EDT" duration-ms="3660" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="dropdown()[pri:0, instance:testcases.DropdownTest@62150f9e]" started-at="2023-10-23T18:41:38 EDT" name="dropdown" finished-at="2023-10-23T18:41:47 EDT" duration-ms="9001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropdown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.DropdownTest@62150f9e]" started-at="2023-10-23T18:41:47 EDT" name="tearDown" finished-at="2023-10-23T18:41:47 EDT" duration-ms="206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.DropdownTest -->
+      <class name="testcases.LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.LoginTest@7ed7259e]" started-at="2023-10-23T18:41:47 EDT" name="setUp" finished-at="2023-10-23T18:41:50 EDT" duration-ms="3142" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="startDriver()[pri:1, instance:testcases.LoginTest@7ed7259e]" started-at="2023-10-23T18:41:50 EDT" name="startDriver" finished-at="2023-10-23T18:41:52 EDT" duration-ms="2512" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@7ed7259e]" started-at="2023-10-23T18:41:52 EDT" name="tearDown" finished-at="2023-10-23T18:41:53 EDT" duration-ms="154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.LoginTest@7ed7259e]" started-at="2023-10-23T18:41:53 EDT" name="setUp" finished-at="2023-10-23T18:41:56 EDT" duration-ms="3098" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="openSignInPage()[pri:2, instance:testcases.LoginTest@7ed7259e]" started-at="2023-10-23T18:41:56 EDT" name="openSignInPage" finished-at="2023-10-23T18:41:58 EDT" duration-ms="2522" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSignInPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@7ed7259e]" started-at="2023-10-23T18:41:58 EDT" name="tearDown" finished-at="2023-10-23T18:41:58 EDT" duration-ms="161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.LoginTest@7ed7259e]" started-at="2023-10-23T18:41:58 EDT" name="setUp" finished-at="2023-10-23T18:42:01 EDT" duration-ms="3089" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateError()[pri:3, instance:testcases.LoginTest@7ed7259e]" started-at="2023-10-23T18:42:01 EDT" name="validateError" finished-at="2023-10-23T18:42:09 EDT" duration-ms="7586" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateError -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@7ed7259e]" started-at="2023-10-23T18:42:09 EDT" name="tearDown" finished-at="2023-10-23T18:42:09 EDT" duration-ms="158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.LoginTest -->
+    </test> <!-- Regression -->
+    <test started-at="2023-10-23T18:41:34 EDT" name="Smoke" finished-at="2023-10-23T18:42:24 EDT" duration-ms="49979">
+      <class name="testcases.AssignmentTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.AssignmentTest@515aebb0]" started-at="2023-10-23T18:41:34 EDT" name="setUp" finished-at="2023-10-23T18:41:36 EDT" duration-ms="2544" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="scenario1()[pri:0, instance:testcases.AssignmentTest@515aebb0]" started-at="2023-10-23T18:41:36 EDT" name="scenario1" finished-at="2023-10-23T18:42:14 EDT" duration-ms="37267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.AssignmentTest@515aebb0]" started-at="2023-10-23T18:42:14 EDT" name="tearDown" finished-at="2023-10-23T18:42:14 EDT" duration-ms="203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.AssignmentTest@515aebb0]" started-at="2023-10-23T18:42:14 EDT" name="setUp" finished-at="2023-10-23T18:42:15 EDT" duration-ms="1562" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="scenario2()[pri:0, instance:testcases.AssignmentTest@515aebb0]" started-at="2023-10-23T18:42:15 EDT" name="scenario2" finished-at="2023-10-23T18:42:18 EDT" duration-ms="2537" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Lists differ at element [2]: Business Analysis != Business Analyst expected [Business Analysis] but found [Business Analyst]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Lists differ at element [2]: Business Analysis != Business Analyst expected [Business Analysis] but found [Business Analyst]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:1644)
+at org.testng.Assert.assertEquals(Assert.java:1606)
+at pageobject.HistoryPage.assertions(HistoryPage.java:74)
+at testcases.AssignmentTest.scenario2(AssignmentTest.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.AssignmentTest@515aebb0]" started-at="2023-10-23T18:42:18 EDT" name="tearDown" finished-at="2023-10-23T18:42:18 EDT" duration-ms="158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.AssignmentTest@515aebb0]" started-at="2023-10-23T18:42:18 EDT" name="setUp" finished-at="2023-10-23T18:42:20 EDT" duration-ms="1464" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="scenario3()[pri:0, instance:testcases.AssignmentTest@515aebb0]" started-at="2023-10-23T18:42:20 EDT" name="scenario3" finished-at="2023-10-23T18:42:24 EDT" duration-ms="4046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario3 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.AssignmentTest@515aebb0]" started-at="2023-10-23T18:42:24 EDT" name="tearDown" finished-at="2023-10-23T18:42:24 EDT" duration-ms="153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.AssignmentTest -->
+    </test> <!-- Smoke -->
+  </suite> <!-- My Fork -->
+</testng-results>

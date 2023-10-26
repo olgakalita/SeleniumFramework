@@ -4,6 +4,7 @@ package pageobject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -13,7 +14,7 @@ import java.util.logging.Logger;
 
 public class LoginPage extends BaseMain {
 
-    public LoginPage(ChromeDriver driver, Logger log){
+    public LoginPage(RemoteWebDriver driver, Logger log){
         super(driver, log);
     }
     public String email_Id = "//input[@id='email']";

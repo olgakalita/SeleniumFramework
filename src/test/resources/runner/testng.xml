@@ -2,6 +2,7 @@
 
 <suite name="My Fork" parallel="tests" thread-count="4" verbose="1" >
     <test name="Regression" >
+        <parameter name="browser" value="edge"></parameter>
         <groups>
             <run>
                 <include name="testHomePage"></include>
@@ -26,6 +27,7 @@
 
 
     <test name="Smoke">
+        <parameter name="browser" value="chrome"></parameter>
         <classes>
 
             <class name="testcases.AssignmentTest"/>
